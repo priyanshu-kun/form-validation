@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <header class="head">
+        <h1>Form Validation</h1>
+    </header>
+    <div class="container">
+        <form class="form" action="#">
+             <div class="username">
+                <label for="username">Username</label>
+                <input class="username" type="text" placeholder="ex: Ultra_Lord">
+                <i class="fas fa-check-circle circle"></i>
+                <i class="fas fa-exclamation-circle exclamation"></i>
+                <small class="error">Error...</small>
+             </div>
+             <div class="password">
+                <label for="password">Password</label>
+                <input class="password" type="password" placeholder="ex: Ult$_ra123@Lord">
+                <i class="fas fa-check-circle circle"></i>
+                <i class="fas fa-exclamation-circle exclamation"></i>
+                <small class="error">Error...</small>
+             </div>
+             <div class="password-check">
+                <label for="password-check">Password check</label>
+                <input class="passwordcheck" type="password" placeholder="ex: Ult$_ra123@Lord">
+                <i class="fas fa-check-circle circle"></i>
+                <i class="fas fa-exclamation-circle exclamation"></i>
+                <small class="error">Error...</small>
+             </div>
+             <div class="email">
+                <label for="email">E-mail</label>
+                <input class="email" type="email" placeholder="ex: Ultra123@gmail.com">
+                <i class="fas fa-check-circle circle"></i>
+                <i class="fas fa-exclamation-circle exclamation"></i>
+                <small class="error">Error...</small>
+             </div>
+             <div class="number">
+                <label for="number">Mobile number</label>
+                <input class="number" type="number" placeholder="ex: 91+898645674">
+                <i class="fas fa-check-circle circle"></i>
+                <i class="fas fa-exclamation-circle exclamation"></i>
+                <small class="error">Error...</small>
+             </div>
+             <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="brain.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "Asap-SemiBold.ttf";
+    src: url(Asap/Asap-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Asap-Medium.ttf";
+    src: url(Asap/Asap-Medium.ttf);
+}
+
+body {
+    font-family: "Asap-Medium.ttf";
+    background: rgb(237, 239, 255);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+
+.head {
+    font-family: "Asap-SemiBold.ttf";
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    opacity: 0.7;
+    background: white;
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    height: 80vh;
+    width: 30%;
+    padding: 30px 20px 0px 30px;
+    position: relative;
+    border-radius: 30px;
+    bottom: 0.2rem;
+    transition: all 300ms ease-in;
+    box-shadow: 0 -8px 12px rgb(253, 253, 253), 0 6px 12px rgba(117, 113, 146, 0.6);
+}
+
+
+.username label ,.password label,.password-check label, .email label,.number label {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 5px 0 5px 10px;
+    opacity: 0.6;
+}
+
+.username input,.password input,.password-check input, .email input,.number input {
+    display: block;
+    font-size: 1rem;
+    padding: 10px 30px;
+    min-width: 95%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    transition: all 300ms ease;
+}
+.username input:focus,.password input:focus,.password-check input:focus, .email input:focus,.number input:focus{
+    
+    box-shadow:inset 4px 5px 7px rgb(213, 213, 235);
+}
+
+
+
+.username small,.password small,.password-check small, .email small, .number small {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    visibility: hidden;
+    color: red;
+}
+
+.username i {
+    position: absolute;
+    left: 80%;
+    top: 11.3%;
+    font-size: 1.3rem;
+    visibility: hidden;
+}
+
+.password i {
+    position: absolute;
+    left: 80%;
+    top: 27.5%;
+    font-size: 1.3rem;
+    visibility: hidden;
+}
+
+
+.password-check i {
+    position: absolute;
+    left: 80%;
+    top: 43.3%;
+    font-size: 1.3rem;
+    visibility: hidden;
+}
+
+
+.email i {
+    position: absolute;
+    left: 80%;
+    top: 59%;
+    font-size: 1.3rem;
+    visibility: hidden;
+}
+
+
+.number i {
+    position: absolute;
+    left: 80%;
+    top: 75%;
+    font-size: 1.3rem;
+    visibility: hidden;
+}
+
+
+
+.btn {
+    /* border: 2px solid red; */
+    border: none;
+    background: white;
+    font-size: 1.3rem;
+    padding: 10px 0;
+    width: 96%;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: rgb(237, 239, 255);
+    box-shadow: 0 -6px 8px rgba(253, 253, 253,0.8), 0 6px 8px rgba(117, 113, 146, 0.6);
+    outline: none;
+    color: rgb(0, 0, 0,0.6);
+    transition: all 200ms ease-in;
+   
+}
+.btn:active {
+    box-shadow: none;
+}
+
+.wrong {
+    color: red;
+}
+
+.right {
+    color: rgb(0, 255, 0);
+}
+
+.wrong-border {
+    border: 2px solid red;
+}
